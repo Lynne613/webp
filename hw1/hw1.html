@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B0929008_HW1</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .row::after {
+            content: "";
+            clear: left;
+            display: table;
+        }
+        
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+            width: 100%;
+        }
+        /* default:cellphone */
+        
+        @media only screen and (min-width: 481px) {
+            /* tablet */
+            .col-s-25 {
+                width: 25%;
+            }
+            .col-s-75 {
+                width: 75%;
+            }
+            .col-s-100 {
+                width: 100%;
+            }
+        }
+        
+        @media only screen and (min-width: 769px) {
+            /* PC   */
+            .col-25 {
+                width: 25%;
+            }
+            .col-50 {
+                width: 50%;
+            }
+        }
+        
+        html {
+            font-family: monospace, sans-serif;
+        }
+        
+        header {
+            background-color: #BA8CD9;
+            color: #633621;
+            padding: 15px;
+        }
+        
+        .menu ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        
+        .menu li {
+            background-color: #F6E4F5;
+            color: #28772B;
+            padding: 5px;
+            margin-bottom: 5px;
+            box-shadow: gray 1px 2px 2px;
+        }
+        
+        .menu li:hover {
+            background-color: darkblue;
+        }
+        
+        aside {
+            background-color: #131D39;
+            color: #AFB3E4;
+            padding: 15px;
+            text-align: center;
+            font-size: 15px;
+            box-shadow: gray 3px 3px 3px;
+        }
+        
+        footer {
+            background-color: #822B72;
+            color: #DDECF4;
+            text-align: center;
+            font-size: 18px;
+            padding: 15px;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>旗艦手機規格比較</h1>
+        <p>Flagship Cellphone Spec Comparasion</p>
+    </header>
+
+    <div class="row">
+
+        <nav class="col-25 col-s-25 menu">
+            <ul>
+                <li>Apple iPhone 13 Pro Max 256G $39400</li>
+                <li>ASUS ROG Phone 5s 12G/256G $24500</li>
+                <li>Google Pixel 6 Pro 12G/256G $27990</li>
+                <li>Sony Xperia 1 III 12G/256G $26900</li>
+                <li>Samsung S22 Ultra 12G/256G $38900</li>
+                <li>小米12 pro 256G $26999</li>
+            </ul>
+        </nav>
+        <article class="col-50 col-s-75">
+            <h1>各機型Pros&Cons</h1>
+            <h2>iPhone 13 Pro</h2>
+            <p>
+                iPhone有著較封閉的iOS系統，使用者可以獲得較穩定的體驗。這也導致其客製化功能較少，系統可玩性也較低。
+            </p>
+            <h2>ROG Phone 5</h2>
+            <p>華碩有著類原生地UI，以及強打散熱的設計，是遊戲玩家的第一首選之一。</p>
+            <h2>Pixel 6 Pro</h2>
+            <p>Google 的手機有著最新的黑科技，但也因受眾不是一般人，導致銷量較低。</p>
+            <h2>Sony Xperia 1</h2>
+            <p>Sony的手機有一份不可取代的經典，雖然它對大部分的人來說不好用，但是他仍存在著。</p>
+            <h2>S22 ultra</h2>
+            <p>三星手機有著全世界最頂尖的螢幕，世界第一的軟體輔助，但是大部分人都不會用。</p>
+            <h2>小米12 pro</h2>
+            <p>會刷機再買。</p>
+        </article>
+        <div class="col-25 col-s-100">
+            <aside>
+                <h1>Soc</h1>
+                <h2>Apple</h2>
+                <p>A15是當前的移動端設備的天花板</p>
+                <h2>高通</h2>
+                <p>2022的旗艦SOC，翻車到外太空了。</p>
+                <h2>聯發科</h2>
+                <p>今年首次超過高通。</p>
+                <h2>三星</h2>
+                <p>還是別出來害人了。</p>
+            </aside>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>以上資料取自於電商平台及個人想法</p>
+    </footer>
+</body>
+
+</html>
