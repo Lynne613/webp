@@ -1,0 +1,91 @@
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .row::after {
+            content: "";
+            clear: left;
+            display: table;
+        }
+        
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+            width: 100%;
+        }
+        /* default:cellphone */
+        
+        @media only screen and (min-width: 481px) {
+            /* tablet */
+            .col-s-25 {
+                width: 25%;
+            }
+            .col-s-75 {
+                width: 75%;
+            }
+            .col-s-100 {
+                width: 100%;
+            }
+        }
+        
+        @media only screen and (min-width: 769px) {
+            /* PC   */
+            .col-25 {
+                width: 25%;
+            }
+            .col-50 {
+                width: 50%;
+            }
+        }
+        
+        html {
+            font-family: monospace, sans-serif;
+        }
+        
+        header {
+            background-color: #BA8CD9;
+            color: #633621;
+            padding: 15px;
+        }
+        
+        .menu ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        
+        .menu li {
+            background-color: #F6E4F5;
+            color: #28772B;
+            padding: 5px;
+            margin-bottom: 5px;
+            box-shadow: gray 1px 2px 2px;
+        }
+        
+        .menu li:hover {
+            background-color: darkblue;
+        }
+        
+        aside {
+            background-color: #131D39;
+            color: #AFB3E4;
+            padding: 15px;
+            text-align: center;
+            font-size: 15px;
+            box-shadow: gray 3px 3px 3px;
+        }
+        
+        footer {
+            background-color: #822B72;
+            color: #DDECF4;
+            text-align: center;
+            font-size: 18px;
+            padding: 15px;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
