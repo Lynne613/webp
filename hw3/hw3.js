@@ -101,4 +101,3 @@ function stopGame() {
     document.getElementById("startBtn").disabled = false;
 }
 
-document.getElementById("as").innerHTML += screen.colorDepth;
