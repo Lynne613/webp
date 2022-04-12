@@ -3,21 +3,24 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>B0929008_HW3</title>
-    <style type="text/css">
-        .label {
-            position: absolute;
-            left: 0px;
-        }
-    </style>
-    <script type="text/javascript" src="hw3.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打字機比賽3.0_B0929008_HW3</title>
+    <link rel="stylesheet" href="hw4.css">
+    <script type="text/javascript" src="hw4.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
 
 <body>
-    <div id="msg"></div>
-    <input id="startBtn" type="button" value="Start" onclick="startGame(this)" />
-    <input type="button" value="End" onclick="stopGame()" />
+
+    <input type="button" value="開始遊戲">
+    <div class="text">
+        產生亂數的char [A-Z] 六個賽道<br> 每個賽道每秒平均1.5個字圖
+        <br> 由左跑到右 (jQuery Animation)<br>
+        <em>打字對應的 char 就字圖消失</em><br>
+        <em>字圖觸碰到最右邊的邊界，Game over!</em><br>
+    </div>
+
 </body>
 
 </html>
