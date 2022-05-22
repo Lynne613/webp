@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import Log_in from './component/logIn';
+import Log_in from './component/login';
 import userName from './component/userName';
 import password from './component/password';
 import logIn from './component/Log_in';
