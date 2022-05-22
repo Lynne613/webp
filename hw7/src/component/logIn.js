@@ -1,6 +1,6 @@
-const Log_in = () =>
+const login = () =>
 {
     return <div class="text"> CGU Login </div>
 }
 
-export default Log_in;
+export default login;
